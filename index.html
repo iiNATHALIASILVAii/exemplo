@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora Cinema</title>
-  <script src="script.js"></script>
-  
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Calculadora Cinema</title>
+  </head>
+  <body>
+    <main>
+      <!-- Conteúdo principal -->
 
-</body>
+      <div class="capa-container">
+        <div class="titulo-wrapper">
+          <!-- Cabeçalho da pag -->
+          <h1>Calculadora Cinema</h1>
+        </div>
+
+        <!-- Formulário para entrada de dados -->
+        <label for="filme">Titulo do Filme</label>
+        <input type="text" id="filme" name="filme" required />
+
+        <label for="duracao">Duração do Filme</label>
+        <input type="number" id="duracao" name="duracao" required />
+
+        <!-- Botão para calcular o tempo de filme -->
+        <button onclick="calcularTempofilme()">Calcular Duração Filme</button>
+
+        <!-- Exibição do resultado -->
+        <h2>Resultado:</h2>
+        <p id="resultadoTexto"></p>
+
+        <!-- Botão pra limpar os campos -->
+        <button id="limpar">Limpar</button>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <p>
+        &copy; 2025 Nathalia Silva | Todos os direitos reservados | Contato:
+        <a href="https://github.com/iiNATHALIASILVAii" target="_blank">GitHub</a>
+      </p>
+    </footer>
+  </body>
 </html>
