@@ -13,10 +13,12 @@ function calcularTempofilme() {
   let resultadoTexto = document.getElementById("resultadoTexto");
 
   // Validação da entrada
-  if (filme === "" || duracao === "") {
+  if (filme === "" || duracaoInput === "") {
     // Na primeira versão, eu estava escrevendo document.getElementById("resultadoTexto").textContent
     // repetidamente em cada linha que precisava atualizar o resultado.
     // Isso funciona, mas não é eficiente e deixa o código mais longo e difícil de ler.
+    //Eu mudei a linha if (filme === "" || duracao === "") para if (filme === "" || duracaoInput === "").
+    // Agora, o código verifica se o valor do input (guardado em duracaoInput) está vazio antes de tentar convertê-lo em número.
     resultadoTexto.textContent = "Todos os campos devem ser preenchidos";
     return;
   }
@@ -31,6 +33,7 @@ function calcularTempofilme() {
   }
   if (duracao <= 0) {
     resultadoTexto.textContent = "A duração do filme deve ser maior que zero";
+    return;
   }
 
   // Processamento

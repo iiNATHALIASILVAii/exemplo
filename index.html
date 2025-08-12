@@ -21,11 +21,13 @@
         <label for="filme">Titulo do Filme</label>
         <input type="text" id="filme" name="filme" required />
 
-        <label for="duracao">Duração do Filme</label>
+        <label for="duracao">Duração do Filme (min)</label>
         <input type="number" id="duracao" name="duracao" required />
 
         <!-- Botão para calcular o tempo de filme -->
+        <div class="button-container">
         <button onclick="calcularTempofilme()">Calcular Duração Filme</button>
+        </div>
 
         <!-- Exibição do resultado -->
         <h2>Resultado:</h2>
