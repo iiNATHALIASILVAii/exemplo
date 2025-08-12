@@ -48,8 +48,10 @@ button:hover {
   background-color: #0c9648;
 }
 
-#limpar {
-  margin-left: auto;
+.button-limpar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
   font-size: 12px;
 }
 
